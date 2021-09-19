@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.body-container {
+  width: 100%;
+  min-height: calc(100vh);
+  background-color: $peach;
+  position: relative;
+}
+
+#content {
+  width: 100%;
+  min-height: calc(100vh - (390px));
+  font-family: sans-serif;
+  // padding: 20px;
+  margin: 0 auto;
+}

@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.body-container {
+  width: 100%;
+  min-height: calc(100vh);
+  background-color: #f5d6ba;
+  position: relative;
+}
+
+#content {
+  width: 100%;
+  min-height: calc(100vh - (390px));
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background-color: #a40e4c;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .title {
+  width: 500px;
+  margin: 0 20px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-style: italic;
+  text-decoration: underline;
+  color: #f5d6ba;
+}
+header .title .logo {
+  height: 40px;
+  width: 40px;
+}
+header .title h1 {
+  font-size: 40px;
+  margin: 0;
+}
+header nav {
+  width: 100%;
+  background-color: #f49d6e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 60px;
+}
+header nav a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #2c2c54;
+  font-size: 20px;
+}
+
+footer {
+  height: 250px;
+  background-color: #acc3a6;
+}
+
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.home__child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  min-height: 600px;
+  background-color: white;
+}
+.home .top {
+  padding: 20px;
+}
+.home .top__img-container {
+  width: 450px;
+  height: 300px;
+  background-image: url(../images/cupcakes.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+.home .top__text-container {
+  height: 100%;
+  width: 300px;
+  font-size: 40px;
+  text-align: center;
+}
+.home .top__text-container h6 {
+  color: #f49d6e;
+}
+.home .bottom {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.home .bottom__header {
+  width: 600px;
+  text-align: center;
+}
+.home .bottom__header h2 {
+  font-size: 30px;
+}
+.home .bottom__featured {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.home .bottom__featured__item {
+  height: 300px;
+  width: 200px;
+  background-color: #f5d6ba;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.home .bottom__featured__item p {
+  background-color: #f49d6e;
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  font-weight: bold;
+  color: #2c2c54;
+  padding: 5px;
+}
+.home .bottom__featured__item--cobbler {
+  background-image: url(../images/peach-cobbler.jpg);
+}
+.home .bottom__featured__item--puff {
+  background-image: url(../images/peach-puff.jpg);
+}
+.home .bottom__featured__item--donut {
+  background-image: url(../images/donuts.jpg);
+}
+
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about .header {
+  margin: 20px;
+  height: 200px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../images/bakeery.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/bakeery.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.about .header h1 {
+  font-size: 100px;
+  font-weight: bold;
+  color: #acc3a6;
+}
+.about .text {
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+.about .text P {
+  text-align: center;
+  font-size: 20px;
+}
+
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2c2c54;
+}
+.contact .header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.contact .header h1 {
+  font-size: 60px;
+  color: #a40e4c;
+}
+.contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact__container--map {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+}
+.contact__container h3 {
+  color: #a40e4c;
+  text-decoration: underline;
+  margin-right: 10px;
+  font-size: 30px;
+}
+.contact__container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact__container:last-of-type {
+  margin-bottom: 30px;
+}
+
+.products {
+  max-width: 800px;
+  margin: 0 auto;
+  color: #2c2c54;
+}
+.products .header {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.products .header h1 {
+  font-size: 60px;
+  color: #f49d6e;
+}
+.products__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.products__container__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.products__container .image-container {
+  width: 300px;
+  height: 300px;
+  background-color: #acc3a6;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.products__container .image-container--bun {
+  background-image: url(../images/bunuelos.jpg);
+}
+.products__container .image-container--cupcake {
+  background-image: url(../images/cupcakes-display.jpg);
+}
+.products__container .image-container--cookie {
+  background-image: url(../images/cookie.jpg);
+}
+.products__container .image-container--cobbler {
+  background-image: url(../images/peach-cobbler.jpg);
+}
+.products__container .image-container--puff {
+  background-image: url(../images/peach-puff.jpg);
+}
+.products__container .image-container--tiramisu {
+  background-image: url(../images/tiramisu.jpg);
+}
+.products__container .text-container {
+  width: 450px;
+}
+.products__container .text-container__name {
+  font-size: 40px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.products__container .text-container__desc {
+  font-size: 20px;
+  font-style: italic;
+}

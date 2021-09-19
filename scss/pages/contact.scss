@@ -1,0 +1,42 @@
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  color: $cadet;
+  //   background-color: aqua;
+  //   height: 100%;
+  .header {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 60px;
+      color: $amaranth;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+
+    &--map {
+      flex-direction: column;
+      padding-bottom: 40px;
+    }
+
+    h3 {
+      color: $amaranth;
+      text-decoration: underline;
+      margin-right: 10px;
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  &__container:last-of-type {
+    // background-color: aqua;
+    margin-bottom: 30px;
+  }
+}

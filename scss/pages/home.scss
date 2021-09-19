@@ -1,0 +1,79 @@
+.home {
+  max-width: 1000px;
+  margin: 0 auto;
+  &__child {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 600px;
+    background-color: white;
+  }
+  .top {
+    padding: 20px;
+    &__img-container {
+      width: 450px;
+      height: 300px;
+      background-image: url(../images/cupcakes.jpg);
+      background-size: cover;
+      background-position: center;
+      margin-right: 20px;
+    }
+
+    &__text-container {
+      height: 100%;
+      width: 300px;
+      font-size: 40px;
+      text-align: center;
+      h6 {
+        color: $tangerine;
+      }
+    }
+  }
+  .bottom {
+    flex-direction: column;
+    &__header {
+      width: 600px;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+      }
+    }
+    &__featured {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      &__item {
+        height: 300px;
+        width: 200px;
+        background-color: $peach;
+        position: relative;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        p {
+          background-color: $tangerine;
+          position: absolute;
+          bottom: 0;
+          left: 5px;
+          font-weight: bold;
+          color: $cadet;
+          padding: 5px;
+        }
+
+        &--cobbler {
+          background-image: url(../images/peach-cobbler.jpg);
+        }
+        &--puff {
+          background-image: url(../images/peach-puff.jpg);
+        }
+        &--donut {
+          background-image: url(../images/donuts.jpg);
+        }
+      }
+    }
+  }
+}

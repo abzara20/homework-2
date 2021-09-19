@@ -1,0 +1,77 @@
+.products {
+  max-width: 800px;
+  margin: 0 auto;
+  color: $cadet;
+  //   background-color: aqua;
+  //   height: 100%;
+  .header {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    h1 {
+      font-size: 60px;
+      color: $tangerine;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      width: 100%;
+      height: 400px;
+      margin-bottom: 10px;
+    }
+
+    .image-container {
+      width: 300px;
+      height: 300px;
+      background-color: $laurel;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--bun {
+        background-image: url(../images/bunuelos.jpg);
+      }
+
+      &--cupcake {
+        background-image: url(../images/cupcakes-display.jpg);
+      }
+
+      &--cookie {
+        background-image: url(../images/cookie.jpg);
+      }
+      &--cobbler {
+        background-image: url(../images/peach-cobbler.jpg);
+      }
+      &--puff {
+        background-image: url(../images/peach-puff.jpg);
+      }
+      &--tiramisu {
+        background-image: url(../images/tiramisu.jpg);
+      }
+    }
+    .text-container {
+      width: 450px;
+      &__name {
+        font-size: 40px;
+        text-decoration: underline;
+        margin-bottom: 10px;
+        // color: $laurel;
+      }
+      &__desc {
+        font-size: 20px;
+        font-style: italic;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.about {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  .header {
+    margin: 20px;
+    height: 200px;
+    width: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url(../images/bakeery.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1 {
+      font-size: 100px;
+      font-weight: bold;
+      color: $laurel;
+    }
+  }
+  .text {
+    max-width: 1000px;
+    margin-bottom: 30px;
+    P {
+      text-align: center;
+      font-size: 20px;
+    }
+  }
+}

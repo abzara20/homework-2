@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  background-color: $amaranth;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  .title {
+    width: 500px;
+    margin: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    // font-family: sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    color: $peach;
+    .logo {
+      height: 40px;
+      width: 40px;
+    }
+    h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+  }
+  nav {
+    width: 100%;
+    background-color: $tangerine;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+    a {
+      text-decoration: none;
+      font-family: sans-serif;
+      color: $cadet;
+      font-size: 20px;
+    }
+  }
+}
