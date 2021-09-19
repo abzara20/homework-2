@@ -4,4 +4,23 @@ footer {
   // position: absolute;
   // bottom: 0;
   // width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: sans-serif;
+  color: $cadet;
+  img {
+    height: 200px;
+    width: 200px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .footer-container {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
